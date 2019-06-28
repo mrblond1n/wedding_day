@@ -5,30 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
   <title>Wedding</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flipclock@0.8.2/dist/flipclock.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flipclock@0.8.2/dist/flipclock.min.js"
+    integrity="sha256-BiezSH09N4/rvsbi2M+VY0et7UQYP3VjtbdFHo46N1g=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="main.min.css">
 </head>
 <body>
 
   <div class="wrapper">
     <section class="section menu">
-      <div class="menu-container container">
-        <ul class="menu__list">
-          <li class="menu__item"><a href="#" class="menu__link">Время</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">О событии</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Организационные вопросы</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Расписание</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">ЗАГС</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Ресторан</a></li>
-        </ul>
-        <div class="counter">
-          <p>Виджет счетчика</p>
-          <svg class="" width="500" height="500" fill="#fff">
-            <use xlink:href="./img/sprite.svg#icons--airplane"></use>
-          </svg>
+        <header class="header container">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link">Время</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">О событии</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Организационные вопросы</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Расписание</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">ЗАГС</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Ресторан</a></li>
+          </ul>
+        </header>
+        <div class="clock-container container">
+          <div class="counter">
+            <div class="absolutePattern">
+              <svg class="" width="900" height="900" fill="#fff">
+                <use xlink:href="./img/sprite.svg#icons--airplane"></use>
+              </svg>
+            </div>
+            <div class="clock"></div>
+          </div>
         </div>
       </div>
     </section>
+    <section class="section information"></section>
   </div>
-  
+
+
+  <script src="./main.min.js"></script>
 </body>
 </html>
