@@ -1,0 +1,10 @@
+.menu {
+  background: #00BFFF;
+  color: $textColor;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
