@@ -4,6 +4,6 @@ for (let i = 0; i < sections.length; i++) {
   headerMenuItem[i].onclick = e => {
     e.preventDefault();
 
-    performTransition(i + 1);
+    scrollToSection(performTransition(i + 1));
   }
 }

@@ -50,6 +50,7 @@ let scrollToSection = direction => {
 
 
 wrapper.onwheel = (e) => {
+
   let deltaY = e.deltaY;
 
   if (deltaY < 0) {
@@ -59,6 +60,7 @@ wrapper.onwheel = (e) => {
   };
 
 };
+
 
 document.onkeydown = e => {
   switch (e.keyCode) {
