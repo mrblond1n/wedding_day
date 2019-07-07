@@ -1,2 +1,22 @@
-$mainColor: #00BFFF;
+$mainColor: linear-gradient(to bottom,#00BFFF, #9FE6FF);
 $textColor: ghostwhite;
+$wedColorFirst: rgb(251,232,158);
+$wedColorSecond: rgb(241, 205, 145);
+$wedColorThird: rgb(89, 141, 233);
+$wedColorFourth: rgb(180, 208, 220);
+$wedColorFifth: rgb(132, 176, 183);
+$wedColorSixth: rgb(121, 118, 119);
+
+$tablets: 768px;
+$phones: 420px;
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}

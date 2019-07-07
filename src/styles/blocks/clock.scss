@@ -1,24 +1,16 @@
 .clock-container {
+  background: url('./img/airplane.png') center center / contain no-repeat;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
 
 .counter {
-  max-width: 60%;
-}
-
-.absolutePattern {
-  position: absolute;
-  svg {
-    position: relative;
-    bottom: 400px;
-    right: 20%;
+  @include phones {
+    display: none;
   }
 }
 
-.flipclock-wrapper {
-  display: block;
-  max-width: 550px;
-  background: transparent;
+.flipclock-wrapper .flipclock-label {
+  color: white !important;
 }

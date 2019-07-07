@@ -1,0 +1,26 @@
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+
+
+.postcard {
+  background: url('./img/postcard.png') center center / cover no-repeat;
+  box-shadow: 5px 5px 10px 2px black;
+  height: 85%;
+  max-width: 520px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.postcard__content {
+  text-align: center;
+  margin-top: 100px;
+  width: 70%;
+}

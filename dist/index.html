@@ -14,7 +14,8 @@
 <body>
 
   <div class="wrapper">
-    <section class="section menu">
+    <div class="maincontent">
+      <section class="section menu section--active">
         <header class="header container">
           <ul class="menu__list">
             <li class="menu__item"><a href="#" class="menu__link">Время</a></li>
@@ -27,20 +28,91 @@
         </header>
         <div class="clock-container container">
           <div class="counter">
-            <div class="absolutePattern">
-              <svg class="" width="900" height="900" fill="#fff">
-                <use xlink:href="./img/sprite.svg#icons--airplane"></use>
-              </svg>
-            </div>
-            <div class="clock"></div>
+            <div class="clock" style="margin:4em;"></div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section information"></section>
+      </section>
+      
+      <hr>
+      
+      <section class="section about-us">
+        <div class="about-us__left-side">
+          <h2>Жених</h2>
+          <div class="about-us__photo about-us__photo-hus"></div>
+          <h2>Никита</h2>
+        </div>
+        <div class="about-us__right-side">
+          <h2>Невеста</h2>
+          <div class="about-us__photo about-us__photo-wif"></div>
+          <h2>Анюта</h2>
+        </div>
+      </section>
+      
+      <hr>
+      
+      <section class="section information">
+        <div class="postcard">
+          <h2>Wedding Day!</h2>
+          <div class="postcard__content">
+            <p>Мы будем рады видеть Вас на нашей росписи, которая состоится <span>08.08.2019 г.</span><br>
+              Сбор гостей в <span>15:00</span> во Дворце бракосочетания ВДНХ.<br>
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <hr>
+      
+      <section class="section question">
+        <div class="question__content">
+          <h2>Дресс-код</h2>
+          <p>Уважаемые гости, на нашем мероприятии приветствуется дресс-код <span>'Coctail'</span>, <br> так же мы будем вам
+            очень признательны, если в своём наряде Вы выберете пастельные оттенки.</p>
+          примеры палитры:
+          <ul class="color__list">
+            <li class="color__item color__item--first">
+              <svg>
+                <use xlink:href="./img/sprite.svg#icons--paintbrush"></use>
+              </svg>
+            </li>
+            <li class="color__item color__item--second">
+              <svg>
+                <use xlink:href="./img/sprite.svg#icons--paintbrush"></use>
+              </svg>
+            </li>
+            <li class="color__item color__item--third">
+              <svg>
+                <use xlink:href="./img/sprite.svg#icons--paintbrush"></use>
+              </svg>
+            </li>
+            <li class="color__item color__item--fourth">
+              <svg>
+                <use xlink:href="./img/sprite.svg#icons--paintbrush"></use>
+              </svg>
+            </li>
+            <li class="color__item color__item--fifth">
+              <svg>
+                <use xlink:href="./img/sprite.svg#icons--paintbrush"></use>
+              </svg>
+            </li>
+            <li class="color__item color__item--sixth">
+              <svg>
+                <use xlink:href="./img/sprite.svg#icons--paintbrush"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </div>
+  <ul class="nav-button__list">
+    <li class="nav-button__item"></li>
+    <li class="nav-button__item"></li>
+    <li class="nav-button__item"></li>
+    <li class="nav-button__item"></li>
+  </ul>
 
 
-  <script src="./main.min.js"></script>
+  <script src="main.min.js"></script>
 </body>
 </html>

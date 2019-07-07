@@ -3,7 +3,6 @@
 }
 
 .menu {
-  background: #00BFFF;
   color: $textColor;
 }
 
@@ -11,8 +10,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .menu__link {
   font-size: 20px;
+}
+
+.menu__item {
+  @include phones {
+    margin-bottom: 10px;
+  }
 }

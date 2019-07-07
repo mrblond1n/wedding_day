@@ -1,0 +1,29 @@
+.about-us {
+  text-align: center;
+  background: url('./img/takeoff.png') center 10% / 50% no-repeat;
+  // background: url('./img/patternsAir.png') center center / 15% no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-us__photo {
+  width: 150px;
+  height: 150px;
+  border: 5px solid $textColor;
+  background: grey;
+  border-radius: 50%;
+  margin: 40px 0;
+}
+
+.about-us .absolutePattern {
+  position: absolute;
+  z-index: 0;
+  svg {
+    position: relative;
+    right: 300px;
+    top: 150px;
+    width: 1300px;
+    height: 1300px;
+  }
+}

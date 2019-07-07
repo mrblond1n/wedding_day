@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Bad Script';
+    src: url('./fonts/BadScript-Regular.eot');
+    src: url('./fonts/BadScript-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BadScript-Regular.woff2') format('woff2'),
+        url('./fonts/BadScript-Regular.woff') format('woff'),
+        url('./fonts/BadScript-Regular.ttf') format('truetype'),
+        url('./fonts/BadScript-Regular.svg#BadScript-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flow Ext';
+    src: url('./fonts/FlowExt.eot');
+    src: url('./fonts/FlowExt.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/FlowExt.woff2') format('woff2'),
+        url('./fonts/FlowExt.woff') format('woff'),
+        url('./fonts/FlowExt.ttf') format('truetype'),
+        url('./fonts/FlowExt.svg#./fonts/FlowExt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flow Ext';
+    src: url('./fonts/FlowExt-Bold.eot');
+    src: url('./fonts/FlowExt-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/FlowExt-Bold.woff2') format('woff2'),
+        url('./fonts/FlowExt-Bold.woff') format('woff'),
+        url('./fonts/FlowExt-Bold.ttf') format('truetype'),
+        url('./fonts/FlowExt-Bold.svg#./fonts/FlowExt-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+$badScript: 'Bad script';
+$flowExt: 'Flow Ext';
