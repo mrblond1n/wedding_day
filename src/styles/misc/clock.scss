@@ -1,8 +1,10 @@
 .clock-container {
+  z-index: 0;
   background: url('./img/airplane.png') center center / contain no-repeat;
-  align-items: center;
-  justify-content: center;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .counter {

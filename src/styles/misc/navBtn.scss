@@ -1,0 +1,21 @@
+.nav-button__list {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  right: 10px;
+}
+
+.nav-button__item {
+  width: 15px;
+  height: 15px;
+  background: $black;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+.nav-button__item--active {
+  border: 5px solid $black;
+  border-radius: 50%;
+  background: #fff;
+}

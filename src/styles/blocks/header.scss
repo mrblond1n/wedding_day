@@ -4,6 +4,9 @@
 
 .menu {
   color: $textColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .menu__list {
@@ -18,6 +21,11 @@
 
 .menu__link {
   font-size: 20px;
+  transition: .4s;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom-color: white;
+  };
 }
 
 .menu__item {
