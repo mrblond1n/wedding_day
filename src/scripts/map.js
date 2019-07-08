@@ -4,21 +4,21 @@ let placemarks = [
   {
     latitude: 55.83585,
     longitude: 37.626645,
-    hintContent: 'Место встречи',
-    balloonContent: 'проспект Мира, 119с421'
+    hintContent: 'Дворец бракосочетания',
+    balloonContent: 'начало в 15:45'
   },
-  {
-    latitude: 55.831089,
-    longitude: 37.634721,
-    hintContent: 'Кафе',
-    balloonContent: 'просп.Мира, 119, стр. 619'
-  }
+  // {
+  //   latitude: 55.831089,
+  //   longitude: 37.634721,
+  //   hintContent: 'Кафе',
+  //   balloonContent: 'просп.Мира, 119, стр. 619'
+  // }
 ],
   geoObjects = [];
 
 function init() {
   let map = new ymaps.Map('map', {
-    center: [55.833242, 37.630499],
+    center: [55.83585, 37.626645],
     zoom: 16,
     controls: ['zoomControl'],
     behaviors: ['drag'],

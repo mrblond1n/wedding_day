@@ -6,9 +6,10 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 22px;
   height: 100%;
   width: 100%;
+  line-height: 30px;
   // @include laptops {
   //   font-size: 13px;
   // }
@@ -25,7 +26,7 @@ body {
   position: relative;
   font-weight: 300;
   font-family: $flowExt;
-  line-height: 24px;
+  line-height: 36px;
 }
 
 .wrapper {
@@ -103,15 +104,4 @@ a {
   text-decoration: none;
   color: $textColor;
   font-weight: bold;
-}
-
-img {
-  width: 100%;
-}
-
-hr {
-    border: 3px dotted $mainColor;
-    border-style: none none dotted; 
-    color: rgba(#dedede, .7); 
-    background-color: rgba(#dedede, .7);
 }

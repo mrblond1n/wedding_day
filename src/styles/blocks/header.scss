@@ -18,6 +18,9 @@
     align-items: center;
   }
 }
+.menu__item:nth-child(5), .menu__item:last-child {
+  display: none;
+}
 
 .menu__link {
   font-size: 20px;
