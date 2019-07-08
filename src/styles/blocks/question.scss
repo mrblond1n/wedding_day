@@ -20,10 +20,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  transform: translateY(-40px);
 }
 
 .color__item {
   width: 30%;
+  height: 90px;
   &--first{
     fill: $wedColorFirst;
   };
