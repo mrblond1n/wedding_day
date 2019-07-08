@@ -2,30 +2,24 @@ window.onload = function() { ymaps.ready(init);
 
 let placemarks = [
   {
-    latitude: 59.97,
-    longitude: 30.31,
-    hintContent: 'Наша бургерная',
-    balloonContent: 'Время работы: 9.00 - 18.00'
+    latitude: 55.83585,
+    longitude: 37.626645,
+    hintContent: 'Место встречи',
+    balloonContent: 'проспект Мира, 119с421'
   },
   {
-    latitude: 59.94,
-    longitude: 30.25,
-    hintContent: 'Наша бургерная',
-    balloonContent: 'Время работы: 9.00 - 18.00'
-  },
-  {
-    latitude: 59.93,
-    longitude: 30.34,
-    hintContent: 'Наша бургерная',
-    balloonContent: 'Время работы: 9.00 - 18.00'
+    latitude: 55.831089,
+    longitude: 37.634721,
+    hintContent: 'Кафе',
+    balloonContent: 'просп.Мира, 119, стр. 619'
   }
 ],
   geoObjects = [];
 
 function init() {
   let map = new ymaps.Map('map', {
-    center: [59.94, 30.32],
-    zoom: 12,
+    center: [55.833242, 37.630499],
+    zoom: 16,
     controls: ['zoomControl'],
     behaviors: ['drag'],
   });
@@ -58,4 +52,4 @@ function init() {
   map.geoObjects.add(clusterer);
   clusterer.add(geoObjects);
 };
-}
+};
