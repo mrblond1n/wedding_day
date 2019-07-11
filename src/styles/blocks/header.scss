@@ -1,12 +1,6 @@
 .header {
   top: 50px;
-}
-
-.menu {
-  color: $textColor;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  width: 100%;
 }
 
 .menu__list {
@@ -18,7 +12,7 @@
     align-items: center;
   }
 }
-.menu__item:nth-child(5), .menu__item:last-child {
+.menu__item:nth-child(6), .menu__item:last-child {
   display: none;
 }
 

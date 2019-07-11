@@ -1,4 +1,4 @@
-.information {
+.information__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,7 @@
 
 
 .postcard {
-  background: url('./img/postcard.png') center center / cover no-repeat;
+  background: url('./img/patterns/postcard.png') center center / cover no-repeat;
   box-shadow: 5px 5px 10px 2px black;
   height: 85%;
   max-width: 520px;

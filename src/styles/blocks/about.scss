@@ -1,6 +1,6 @@
 .about-us {
   text-align: center;
-  background: url('./img/takeoff.png') center 10% / 50% no-repeat;
+  background: url('./img/patterns/takeoff.png') center 10% / 50% no-repeat;
   // background: url('./img/patternsAir.png') center center / 15% no-repeat;
   display: flex;
   align-items: center;
@@ -20,16 +20,4 @@
 }
 .about-us__photo--ann {
   background: url('./img/photos/we.jpg') left 55% / 260px no-repeat;
-}
-
-.about-us .absolutePattern {
-  position: absolute;
-  z-index: 0;
-  svg {
-    position: relative;
-    right: 300px;
-    top: 150px;
-    width: 1300px;
-    height: 1300px;
-  }
 }

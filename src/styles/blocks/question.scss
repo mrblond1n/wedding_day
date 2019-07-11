@@ -1,18 +1,9 @@
 .question {
-  background: url('./img/patternAir2.svg') center 70% / 70% no-repeat;
+  background: url('./img/patterns/patternAir2.svg') center 70% / 70% no-repeat;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 100%;
-}
-
-.question__content {
-  text-align: center;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
 }
 
 .color__list {

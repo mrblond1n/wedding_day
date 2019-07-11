@@ -1,10 +1,14 @@
 .clock-container {
   z-index: 0;
-  background: url('./img/airplane.png') center center / contain no-repeat;
-  height: 100%;
+  background: url('./img/patterns/airplane.png') center center / contain no-repeat;
+  height: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateY(-100px);
+  @include phones {
+    transform: translateY(-50px);
+  }
 }
 
 .counter {
