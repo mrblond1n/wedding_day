@@ -4,6 +4,14 @@
   overflow: hidden;
 }
 
+.contact-slider__content--meet-point {
+  img {
+    width: 100px;
+    margin: auto;
+    transform: rotate(180deg);
+  }
+}
+
 .contact-slider__content--map {
   height: 70%;
   width: 100%;

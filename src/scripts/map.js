@@ -5,14 +5,8 @@ let placemarks = [
     latitude: 55.83585,
     longitude: 37.626645,
     hintContent: 'Дворец бракосочетания',
-    balloonContent: 'начало в 15:45'
-  },
-  // {
-  //   latitude: 55.831089,
-  //   longitude: 37.634721,
-  //   hintContent: 'Кафе',
-  //   balloonContent: 'просп.Мира, 119, стр. 619'
-  // }
+    balloonContent: 'начало в 15:30'
+  }
 ],
   geoObjects = [];
 
@@ -33,7 +27,7 @@ function init() {
       },
       {
         iconLayout: 'default#image',
-        iconImageHref: './img/icons/love.svg',
+        iconImageHref: './assets/img/icons/love.svg',
         iconImageSize: [46, 57],
         iconImageOffset: [-23, -57],
       });
