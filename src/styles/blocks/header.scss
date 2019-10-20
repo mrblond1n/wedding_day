@@ -12,17 +12,28 @@
     align-items: center;
   }
 }
-.menu__item:nth-child(6), .menu__item:last-child {
+.menu__item:nth-child(6),
+.menu__item:last-child {
   display: none;
 }
 
 .menu__link {
   font-size: 20px;
-  transition: .4s;
+  transition: 0.4s;
   border-bottom: 2px solid transparent;
-  &:hover {
+  &--black-color {
+    color: $black;
+    &:hover {
+      border-bottom-color: $black;
+    }
+  }
+  &--white-color:hover {
     border-bottom-color: white;
-  };
+  }
+}
+
+.menu__link .menu__link--black-color:hover {
+  border-bottom: 10px solid $black;
 }
 
 .menu__item {
