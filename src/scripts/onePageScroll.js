@@ -4,14 +4,15 @@ const display = document.querySelector('.maincontent'),
   sectionsArr = [];
 
 
-  for (let i = 0; i < sections.length; i++) {
-    sectionsArr.push(sections[i]);
-  };
+for (let i = 0; i < sections.length; i++) {
+  sectionsArr.push(sections[i]);
+};
 
 let inscroll = false;
 
 
-let performTransition = (sectionEq) => {
+// let performTransition = (sectionEq) => {
+function performTransition(sectionEq) {
 
   if (inscroll === false) {
 
@@ -34,18 +35,19 @@ let performTransition = (sectionEq) => {
   };
 };
 
-let scrollToSection = direction => {
+
+function scrollToSection(direction) {
 
   const activeSection = document.querySelector('.section--active');
 
-  if (direction === "next"
-    && activeSection.nextElementSibling != null) {
+  if (direction === "next" &&
+    activeSection.nextElementSibling != null) {
     performTransition(sectionsArr.indexOf(activeSection.nextElementSibling));
-  } else if (direction === "prev"
-    && activeSection.previousElementSibling != null) {
+  } else if (direction === "prev" &&
+    activeSection.previousElementSibling != null) {
     performTransition(sectionsArr.indexOf(activeSection.previousElementSibling));
   };
-  
+
 };
 
 
@@ -64,11 +66,14 @@ wrapper.onwheel = (e) => {
 
 document.onkeydown = e => {
   switch (e.keyCode) {
-    case 38: scrollToSection("prev");
+    case 38:
+      scrollToSection("prev");
       break;
-    case 40: scrollToSection("next");
+    case 40:
+      scrollToSection("next");
       break;
-    case 32: scrollToSection("next");
+    case 32:
+      scrollToSection("next");
       break;
   }
 };

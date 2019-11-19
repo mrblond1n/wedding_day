@@ -19,7 +19,6 @@ const {
   uglify = require('gulp-uglify'), // минификация js кода
   svgo = require('gulp-svgo'), // оптимизация svg картинок (Например, удаление ненужных аттрибутов)
   svgSprite = require('gulp-svg-sprite'), // создание Sprite для svg
-  pug = require('gulp-pug'), // компиляция pug в html
   gulpif = require('gulp-if'), // добавление условий в gulp для разделения проекта
   env = process.env.NODE_ENV; // добавление переменных в package.json в "scripts" для разделения проекта
 sass.compiler = require('node-sass');
@@ -43,33 +42,6 @@ task('clean', () => {
 task('html', () => {
   return src(`${SRC_PATH}/*.html`)
     .pipe(dest(DIST_PATH))
-    .pipe(reload({
-      stream: true
-    }));
-});
-
-// PUG ADD
-
-task('pug-main', () => {
-  return src(`${SRC_PATH}/pug/pages/index.pug`)
-    .pipe(pug({
-      pretty: true,
-    }))
-    .pipe(dest(DIST_PATH))
-    .pipe(reload({
-      stream: true
-    }));
-});
-
-task('pug-pages', () => {
-  return src([
-      `${SRC_PATH}/pug/pages/*.pug`,
-      `!${SRC_PATH}/pug/pages/index.pug`
-    ])
-    .pipe(pug({
-      pretty: true,
-    }))
-    .pipe(dest(`${DIST_PATH}/assets/pages/`))
     .pipe(reload({
       stream: true
     }));
@@ -167,8 +139,6 @@ task('server', () => {
 task('watch', () => {
   watch(`./${SRC_PATH}/styles/**/*.scss`, series('styles'));
   watch(`./${SRC_PATH}/*.html`, series('html'));
-  watch(`./${SRC_PATH}/pug/**/*.pug`, series('pug-pages'));
-  watch(`./${SRC_PATH}/pug/pages/index.pug`, series('pug-main'));
   watch(`./${SRC_PATH}/scripts/*.js`, series('scripts'));
   watch(`./${SRC_PATH}/img/icons/*.svg`, series('icons'));
 });
@@ -179,7 +149,6 @@ task(
   'default',
   series('clean',
     parallel('html',
-      // 'pug-pages', 'pug-main',
       'fonts', 'images', 'styles', 'scripts', 'icons'),
     parallel('watch', 'server')
   )
@@ -191,7 +160,6 @@ task(
   'build',
   series('clean',
     parallel('html',
-      // 'pug-main', 'pug-pages', 
       'fonts', 'images', 'styles', 'scripts', 'icons')
   )
 );
